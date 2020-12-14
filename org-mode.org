@@ -1,0 +1,91 @@
+* org-mode简明手册
+* 简介
+** 1.1 序
+功能:快速笔记,维持待办事项和做项目计划
+
+** 1.2 安装
+
+** 1.3 激活
+;; 增加到.emacs文件,打开.org自动进入org模式
+(add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
+(add-hook 'org-mode-hook 'turn-on-font-lock) ; not needed when global-font-lock-mode is on
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cb" 'org-iswitchb)
+
+** 1.4 反馈
+
+* 2 文档结构
+** 2.1 大纲
+tabl: org-cycle,折叠
+*** 折叠示例
+    有内容的呢
+** 2.2 标题
+;; todo 等待使用代码块修改回来
+;* Top level headline
+;** Second level
+;*** 3rd level
+;    some text
+;*** 3rd level
+;    more text
+;
+;* Another top level headline
+
+** 2.3 视图循环
+Tab 子树循环 FOLDED->CHILDREN->SUBTREE
+S-TAB 全局循环
+C-u C-u C-u TAB 显示全部
+
+** 2.4 移动
+C-c C-n 下个标题
+C-c C-p 上个标题
+C-c C-f 下个同级标题
+C-c C-b 上个同级标题
+C-c C-u 回到上层标题
+
+** 2.5 结构编辑
+M-RET: 插入同级标题
+M-S-RET: 插入和当前标题同级的TODO
+TAB(新的空的条目中): 输入*之后,再输入tab切换*
+M-LEFT/RIGHT:提示/降低一个等级
+M-S-LEFT/RIGHT: 递归
+M-S-UP/DOWN: 将子树上/下移
+C-c C-w: 将条目传送到另一个文件中
+C-x n s/w: 将视图局限到当前子树中/再次放宽视图
+
+** 2.6 稀疏树
+C-c /: 选择稀疏树
+C-c / r: 匹配稀疏树
+
+** 2.7 文本列表
+Org列表:
+1. 无序列表 - + *
+2. 有序列表 1.
+3. 描述列表::
+*** example
+**** Lord of the Rings
+     My favorite scenes are (in this order)
+   1. The attack of the Rohirrim
+   2. Eowyn's fight with the witch king
+       + this was already my favorite scene in the book
+       + I really like Miranda Otto.
+   Important actors in this film are:
+   - Elijah Wood :: He plays Frodo
+   - Sean Austin :: He plays Sam, Frodo's friend.
+
+TAB: 折叠项
+M-TAB: 当前级别插入项
+M-S-TAB: 插入复选框x的项
+M-S-UP/DOWN: 
+M-LEFT/RIGHT:
+M-S-LEFT/RIGHT:
+C-c C-c:
+C-c:
+与标题一致
+** 2.8 脚注
+The Org homepage[fn:1] now looks a lot better than it used to.
+...
+[fn:1] The link is: http://orgmode.org
+C-c C-x f: y定义和引用互相跳转
+C-c C-C 定义和引用之前跳转
+
