@@ -1,0 +1,51 @@
+* 第一天: 准备开始
+
+** 说在最前面
+完成emacs官方教程
+完成Learn X in Y Minutes
+
+** 基础操作
+光标移动
+文件操作
+
+** 内置功能
+emacs很多功能需要开启
+比如: M-x linum-mode
+
+*** 获取帮助
+    1. C-h k: h:help,k:keyword
+    2. C-h v: v:variable
+    3. C-h f: f:function
+
+** 学习基础Elisp
+(+ 2 2)
+(+ 2 (* 3 4))
+;;定义变量
+(setq name "username")
+(message name)
+
+;;定义函数
+(defun func ()
+   (message "Hello, %s" name))
+;;执行函数
+(func)
+
+;;设置快捷键
+(global-set-key (kbd "<f1>") 'func)
+
+;;使函数可直接被调用可添加(interactive)
+(defun func ()
+  (interactive)
+  (message "Hello, %s" name))
+*** 开始Hacking!
+复制~/.emacs到~/.emacs.d/init.el, 删除~/.emacs
+mode模式:c-h m: 查看mode模式;major mode与minor mode
+
+**** 简单的编辑器自定义
+见~/.emacs.d/init.el,M-x load-file生效
+
+*** 插件管理
+
+*** Org-mode
+tab:关闭与展开项目
+C-c C-t: t:todo 转换成待办事项

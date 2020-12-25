@@ -1,0 +1,15 @@
+* 第四天: 配置文件模块化(下)以及使用优化
+** 配置文件模块化(下)
+features:
+  feature:
+    elisp符号: lisp插件(package)
+
+调用(provide 'symbol_name)时,emacs把符号加入features中
+
+load-file: 加载指定文件
+load: 搜索load-path中的路径并打开第一个匹配文件名的文件
+require: import
+autoload: 懒加载
+
+** 更好的默认设置
+

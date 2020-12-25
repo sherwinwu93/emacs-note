@@ -1,0 +1,37 @@
+* 第三天:配置文件模块化(上)
+** 多文件存储配置文件(上)
+~/.emacs.d/目录
+1. auto-save-list 自动生成的保持数据
+2. elpa 下载的插件目录
+3. init.el 我们的配置文件
+4. recentf 最近访问的文件列表
+
+命名规则
+;;自定义变量
+my/xxx
+;;模式命名规则
+ModeName-mode
+;;模式内的变量可以使用
+ModeName-VariableName
+
+配置文件分模块
+├── init.el
+└── lisp
+    ├── custom.el 存放使用编辑器接口产生的配置信息
+    ├── init-better-defaults.el 增强内置功能
+    ├── init-helper.el 
+    ├── init-keybindings.el 快捷键绑定
+    ├── init-packages.el 插件管理
+    ├── init-ui.el 视觉层配置
+    └── init-org.el Org模式相关设定
+
+** Major与Minor Mode详解
+Major模式:
+1. text-mode: 文本编辑模式
+2. special-mode: 特殊模式
+3. prog-mode: 所有编程语言的父模式
+
+命名规则:
+1. 模式: ModeName-mode
+2. 快捷键: ModeName-mode-key-map
+3. 钩子: ModeName-mode-hook

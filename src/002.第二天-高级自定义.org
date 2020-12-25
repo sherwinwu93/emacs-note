@@ -1,0 +1,41 @@
+* 第二天: 高级自定义
+** 说在最前面
+setq: 当前缓冲区变量
+setq-default: 全局变量
+(setq cursor-type 'bar)->(setq-default cursor-type 'bar)
+
+分屏: C-x 2: 分到上边; C-x 3: 分到右边
+
+查找快捷键,变量,函数
+1. C-h C-f:find-function
+2. C-h C-v:find-variable
+3. C-h C-k:find-key
+
+** Emacs也很美
+*** 配置插件源
+M-x package-list-packeages:查看插件
+    I: 安装
+    D: 删除
+    U: 更新
+    X: 确认
+
+** JavaScript IDE
+下载js2-mode,配置js2-mode
+js2-mode提供:
+1. 语法高亮
+2. 语法检查器Linter
+
+*** Org-mode进阶
+嵌入代码块
+#+BEGIN_SRC emacs-lisp
+  ;;Your code goes here
+  ;;你的代码写在这里
+  (defun func() (1))
+#+END_SRC
+
+添加Org-mode文本内语法高亮
+
+Agenda的使用
+1. C-c C-s: 选择开始的时间
+2. C-c C-e: 选择结束的时间
+3. C-c a: 打开agenda模式选择不同的可视方式
