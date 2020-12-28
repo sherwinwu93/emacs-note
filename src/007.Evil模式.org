@@ -1,0 +1,7 @@
+* 第七天: Evil模式
+1. Normal Mode-> Normal State
+2. Insert Mode-> Insert State
+3. Visual Mode-> Visual State
+4. Motion Mode-> Motion State
+Emacsde的特殊状态是Emacs State
+** Evil的安装

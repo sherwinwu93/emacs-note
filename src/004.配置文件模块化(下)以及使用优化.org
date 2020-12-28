@@ -28,3 +28,4 @@ C-x d:进入Dired Mode.
   8. x 标记所有
 
 ** Org-mode管理Emacs配置
+可以使用org-mode管理emacs配置(不推荐)

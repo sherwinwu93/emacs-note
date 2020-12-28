@@ -1,0 +1,53 @@
+* 前言
+  Emacs是最强大的编辑器.Emacs is a life.
+*** 功能
+   1. 管理文件
+   2. 编译程序
+   3. 运行shell命令
+** 为什么要读这本书?
+先学习基本知识,再学习高级
+emacs的好处:
+1. 多窗口多缓冲区,多文件处理
+2. 自定义键盘命令
+3. 自定义emacs
+4. emacs改成工作环境,完成所有日常任务.组织文件,编译程序和shell命令
+5. 创建宏简化重复性任务
+6. 使用emacs支持编程语言
+7. 支持md,html等标记文本
+8. 纠正拼写错误
+** Which Emacs Is Which?
+GNU emacs
+** What's New In This Edition
+
+** GNU Emacs and the Free Software Foundation
+
+** An Approach to Learning Emacs
+前两章必读,其他章节可以跳着读
+章节简介:
+1. emacs基础:启动emacs,处理文件
+2. 编辑:移动,复制和粘贴文本及撤销,基础的定制
+3. 搜索和替换:更多编辑,搜索和替换,单词缩写模式,拼写检查.
+4. buffers,Windows,Frames: emacs风格的窗口,emacs的操作系统窗口.如何加入书签
+5. emacs作为工作环境,从emacs内部发出命令,处理文件和目录,以及GTD,如日历和日记
+6. 编写宏,用宏来消除重复的任务
+7. 简单的文本格式和专业编辑,如标签、缩进和居中,以及特性,如大纲模式和矩形编辑
+8. 标记语言支持,对HTML,XML,TEX和LATEX的emacs支持
+9. 计算机语言支持:emacs作为编程环境,支持c,java,Perl和Sql,编译器和Unix make的接口
+10. 自定义emacs编程:emacs自定义工具.这些工具允许不编辑启动文件的情况下更改变量.描述了如何修改显示.
+11. Emacs Lisp编程,Emacs Lisp的基础知识,进一步定制Emacs
+12. 版本控制
+13. 不同操作系统的Emacs
+14. emacs的帮助系统 C-h
+
+** What We Haven't Included
+没有包括的内容
+1. Compatibility modes 兼容模式比如兼容vi
+2. Many programing languages 多种编程语言模式
+3. Advanced Lisp programing 高级Lisp编程
+4. Using Emacs to access the Internet 使用emacs访问互联网
+5. Unicode support Unicode 支持
+6. Games and amusements 游戏和娱乐
+
+** The Meta Key 元按键
+Ctrl键
+Alt键

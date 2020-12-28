@@ -1,0 +1,23 @@
+* 第五天: 打造前端开发神器
+1. 自动配对' error
+2. 光标在括号内就高亮括号
+3. 删除dos的换行符
+
+** web-mode
+1. 安装web-mode
+2. 配置html文件使用web-mode
+3. html缩进设置
+4. 缩进2->4,4->2
+
+** js2-refactor
+error
+** 优化occur与imenu
+配置OccurMode搜索当前被选中的字符串
+1. 配置occur mode
+2. 配置imenu
+** expand-region
+更方便选中区域
+** iedit
+同时编辑多个区域 error
+** Org导出
+C-c C-e 导出为你需要的格式
