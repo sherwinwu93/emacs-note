@@ -1,0 +1,197 @@
+* Chapter 1. Emacs Basics
+** 1.1 Introducting Emacs
+可以不用离开emacs完成各种各样的工作,不要想着一下子把它们都学完.
+
+** 1.2 Understanding Files and Buffers
+文件和缓冲区
+
+** 1.3 A Word About Modes
+主要模式:
+此要模式:
+Fundamental mode
+
+The default mode (Chapter 6)
+
+Text mode
+
+For writing text (Chapter 2)
+
+View mode
+
+For viewing files but not editing (Chapter 4)
+
+Shell mode
+
+For running a shell within Emacs (Chapter 5)
+
+Outline mode
+
+For writing outlines (Chapter 7)
+
+Indented text mode
+
+For indenting text automatically (Chapter 7)
+
+Paragraph indent text mode
+
+For indenting the first line of each paragraph (Chapter 7)
+
+Picture mode
+
+For creating ASCII drawings using the keyboard (Chapter 7)
+
+HTML mode
+
+For writing HTML (Chapter 8)
+
+SGML mode
+
+For writing SGML and XML (Chapter 8)
+
+LaTeX mode
+
+For formatting files for TEX and LATEX (Chapter 8)
+
+Compilation mode
+
+For compiling programs (Chapter 9)
+
+cc mode
+
+For writing C, C++, and Java programs (Chapter 9)
+
+Java mode
+
+For writing Java programs (Chapter 9)
+
+Perl mode and Cperl mode
+
+For writing Perl programs (Chapter 9)
+
+SQL mode
+
+For interacting with databases using SQL (Chapter 9)
+
+Emacs Lisp mode
+
+For writing Emacs Lisp functions (Chapter 9 and Chapter 11)
+
+Lisp mode
+
+For writing Lisp programs (Chapter 9 and Chapter 11)
+
+Lisp interaction mode
+
+For writing and evaluating Lisp expressions (Chapter 9 andChapter 11)
+
+** 1.4 starting Emacs 启动emacs
+
+** 1.5 About Emacs Display
+
+*** 1.5.1 The Toolbar
+
+*** 1.5.2 The Menus
+
+*** 1.5.3 The Mode Line
+
+*** 1.5.4 The Minibuffer
+
+** 1.6 Emacs Commands Emacs 命令
+emacs命令通常非常长,使用方法来简化命令,使用绑定.
+所有命令都是绑定机制,即便是插入最简单的字符,Emacs还将一些命令绑定鼠标.
+关键序列:
+1. C-n
+2. M-n
+3. C-x ?
+4. C-c: 通常与专业有关
+5. M-x ? Enter: 对任何命令适用
+
+** 1.7 Opening a File
+C-x C-f: 对应的command是find-file
+同时读取两次时,会重复利用buffer
+*** 1.7.1 If You Read the Wrong File
+C-x C-v: find-alternate-file 纠正错误文件
+*** 1.7.2 Letting Emacs Fill in the Blanks
+tab:智能填充
+*** 1.7.3 Inserting And Appending Files
+    C-x i: 将一个文件插入到另一个文件中
+*** 1.7.4 How Emacs Chooses a Default Directory emacs选择默认目录
+
+** 1.8 保存文件
+C-x C-w: write-file
+
+** 1.9 离开Emacs
+
+** 1.10 寻求帮助
+   C-h k: 快捷键
+   C-h f: commands
+   C-h v: 变量
+** 1.11 Summary 总结
+C-x C-fFile  打开文件
+
+find-file
+
+Find file and read it in a new buffer.
+
+C-x C-v 打开替换文件
+
+find-alternate-file
+
+Read an alternate file, replacing the one read with C-x C-f.
+
+C-x iFile  插入文件
+
+insert-file
+
+Insert file at cursor position.
+
+C-x C-sFile  保存
+
+save-buffer
+
+Save file.
+
+C-x C-wFile  另存为
+
+write-file
+
+Write buffer contents to file.
+
+C-x C-cFile  保存并退出emacs
+
+save-buffers-kill-emacs
+
+Exit Emacs.
+
+C-h 打开帮助
+
+help-command
+
+Enter the online help system.
+
+C-h f 帮助函数
+
+describe-function
+
+Gives online help for a given command name.
+
+ 
+C-h k 帮助快捷键
+
+describe-key
+
+Gives online help for a given keystroke sequence.
+
+C-h t帮助文档
+
+help-with-tutorial
+
+Start the Emacs tutorial.
+
+C-h i 浏览说明书
+
+info-goto-emacs-command-node
+
+Start the Info documentation reader.
+
+*** 1.11.1 您可能遇到的问题

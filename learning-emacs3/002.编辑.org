@@ -1,0 +1,227 @@
+* Chapter 2.Editing 第二章编辑
+  学习的方法越多,就只需要按越小的键. 
+  怎么学?打一些字,比如报纸工作啊.如果打错了,继续打.学习任何编辑都是形成手指习惯,而不是记住书上说的内容.
+  
+  refill-mode:
+  1. 重新填充模式,M-x refill-mode 开启/关闭
+  2. 默认关闭,开启了会出现在模式线上
+  
+  auto-fill-mode:
+  1. 自动填充模式
+  2. 使用M-q完成填充
+  3. 与refill-mode共存
+
+** 2.1. Moving the Cursor 移动光标
+   抛弃鼠标,只使用键盘速度会非常快
+
+*** 2.1.1 Other Ways to Move the Cursor 移动光标的其他方法
+    M-f: 向前移动一个单词
+    M-b: 向后移动一个单词
+    C-a: 移动行首
+    C-e: 移到行尾
+    M-a: 向前移动一个句子
+    M-e: 像后移动一个句子
+    M-{: 移动一个段落
+    M-}: 向后移动一个段落
+
+b f p n : C小 M大 a行首 e行尾
+
+*** 2.1.2 Moving a Screen at a Time 一次移动屏幕
+    C-v: 翻页
+    M-v: 向前翻页
+    M->: 页尾
+    M-<: 页首
+    M-x goto-line Enter: 移动到n行 非常有用
+
+*** 2.1.3 Repeating Command 重复命令
+    M-n: 重复命令,n是数字,是次数
+    C-u n: 等价于M-n
+*** 2.1.4 Centering the Display 将显示器居中
+    C-l: 显示器居中
+
+C-f
+
+forward-char
+
+Move forward one character (right).
+
+C-b
+
+backward-char
+
+Move backward one character (left).
+
+C-p
+
+previous-line
+
+Move to previous line (up).
+
+C-n
+
+next-line
+
+Move to next line (down).
+
+M-f
+
+forward-word
+
+Move one word forward.
+
+M-b
+
+backward-word
+
+Move one word backward.
+
+C-a
+
+beginning-of-line
+
+Move to beginning of line.
+
+C-e
+
+end-of-line
+
+Move to end of line.
+
+M-e
+
+forward-sentence
+
+Move forward one sentence.
+
+M-a
+
+backward-sentence
+
+Move backward one sentence.
+
+M-}
+
+forward-paragraph
+
+Move forward one paragraph.
+
+M-{
+
+backward-paragraph
+
+Move backward one paragraph.
+
+C-v
+
+scroll-up
+
+Move forward one screen.
+
+M-v
+
+scroll-down
+
+Move backward one screen.
+
+C-x ]
+
+forward-page
+
+Move forward one page.
+
+C-x [
+
+backward-page
+
+Move backward one page.
+
+M-<
+
+beginning-of-buffer
+
+Move to beginning of file.
+
+M->
+
+end-of-buffer
+
+Move to end of file.
+
+(none)
+
+goto-line
+
+Go to line n of file.
+
+(none)
+
+goto-char
+
+Go to character n of file.
+
+C-l
+
+recenter
+
+Redraw screen with current line in the center.
+
+M-n
+
+digit-argument
+
+Repeat the next command n times.
+
+C-u n
+
+universal-argument
+
+Repeat the next command n times (four times if you omit n).
+
+*** 2.1.5 Emacs Commands and Your Keyboard Emacs命令和键盘
+    f10: 打开tool bar
+
+** 2.2 Deleting Text 删除文本
+   C-x u: 撤销
+   C-d: 删除
+   M-d: 删除单词
+   M-del: 删除前一个单词
+   C-k: 删除整行
+
+*** 2.2.1 The Kill Ring 
+    The kill Ring
+    1. kill的文本会存储到kill ring
+    2. 使用C-y可以恢复文本
+    3. 除了del C-del, 其他删除都进入kill ring
+    4. 连续使用kill命令,C-y能恢复所有,但是只要有一个非kill命令,就会打断
+
+** 2.3 Marking Text to Delete, Move, or Copy 选择文本进行删除,移动,复制
+   C-@: 选中
+   C-w: 剪切
+   M-w: 复制
+   M-y: 可以恢复更近一次的删除
+   C-x C-x: 选中一行进行复制
+
+** 2.4. Emacs and the clipboard 剪切板
+   linux没有剪切板
+
+** 2.5 Editing Tricks and Shortcuts 编辑技巧及快捷方式
+*** 2.5.1 Fixed Transpostions 固定换位
+C-t: 微调顺序
+M-t: 调换单词
+C-x C-t: 调换两行
+
+the best of timse, it
+the best of times, it
+
+*** 2.5.2 Changing Capitalization 改变大小写
+M-u: 往后改变大小写
+M-M-u: 往前改变大小写
+M-c: 改变单个大小写
+Meta-M-c: 改变首字大小写
+
+*** 2.5.3 Overwrite Mode 覆盖模式
+
+** 2.6 Canceling Commands and Undo Changes 取消命令和撤销更改
+   C-g
+   C-x u
+   M-x revert-buffer

@@ -1,0 +1,44 @@
+* Chapter 3. search And Replace 
+** 3.1 Different Kinds of Searches 不同类型的搜索
+   search
+   1. Simple search 简单搜索
+   2. Incremental search 递增式搜索 动态加载
+   3. Word Search 单词搜索
+   4. Regular expression search 正则式搜索
+   5. Incremental Regular expression search 增量正则式搜索
+   Replace 
+   1. Simple search and replace 简单的搜索和替换
+   2. Query-replace 查询替换
+   3. Regular expression replace 正则表达式替换
+*** 3.1.1 Increment search
+    C-s是搜索指令,输入其他指令可以停止搜索
+    C-s C-w: 搜索单词
+
+*** 3.1.2 Simple search
+
+*** 3.1.3 Word search
+
+** 3.2 Search and Replace 搜索和替换
+*** 3.2.1 Simple Search and Replace Operations 简单的搜索和替换操作
+M-x replacestring
+*** 3.2.2 Query-Replace查询-替换
+M-%
+*** 3.2.3 Repeating Query-Replaces 
+*** 3.2.4 Recursive Editing 
+C-r C-M-c
+*** 3.2.5 Are Emacs Searches Case-Sensitive? Emacs区分大小写吗
+*** 3.2.6 Regular Expressions for Search and Replacement Operations'
+^ 行首
+$ 行尾
+. 匹配个字符
+.* 匹配任何多个的组成
+\< 词首
+\> 词尾
+[] 匹配的任何字符
+\s,\S 空格,换行符,指标符,回车符,换页符或退格,\S不匹配
+\d,\D 匹配数字,\D不匹配
+\w,\W 匹配单词字符(大小写字符,数字和下划线字符),\W不匹配该单词
+
+** 3.3 Checking Spelling Using Ispell 使用Ispell检查拼写
+*** 3.3.1 Checking a Buffer 检查缓冲区
+;;todo
